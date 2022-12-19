@@ -14,6 +14,6 @@ ul {
 
 header {
     min-height: 100vh;
-    background: url(../src/img01.jpg) no-repeat center;
+    background-image: url("../src/img01.jpg") no-repeat center;
     background-size: cover;
 }
