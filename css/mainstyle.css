@@ -66,8 +66,6 @@ header {
     flex-direction: column;
     opacity: 0.4;
     justify-content: center;
-    overflow: hidden;
-    margin: 4px;
 }
 
 .txt h1{
