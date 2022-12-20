@@ -54,10 +54,11 @@ header {
 
 .menu ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;/*flex-end*/
     width: 70%;
     list-style: none; 
     align-items: center;
+    padding: 0 2.5px;
 }
 
 .menu ul li {
@@ -108,11 +109,11 @@ header {
 
 .indicator {
     position: absolute;
-    left: 995px;
+    left: 482px;
     width: 70px;
     height: 70px;
     background: rgb(230, 4, 4);
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 .menu ul li:nth-child(1).active ~ .indicator
@@ -121,23 +122,23 @@ header {
     box-shadow: 0 15px 25px #f53b5799;
     transform: translateX(calc(70px * 0));
 }
-.menu ul li:nth-child(2).active ~ .indicator
+.menu ul li:nth-child(4).active ~ .indicator
 {
     background: #5d62fb;
     box-shadow: 0 15px 25px #5d62fb99;
-    transform: translateX(calc(70px * 1));
+    transform: translateX(calc(70px * 3));
 }
-.menu ul li:nth-child(3).active ~ .indicator
+.menu ul li:nth-child(7).active ~ .indicator
 {
     background: #05c46b;
     box-shadow: 0 15px 25px #05c46b99;
-    transform: translateX(calc(70px * 2));
+    transform: translateX(calc(70px * 6));
 }
-.menu ul li:nth-child(4).active ~ .indicator
+.menu ul li:nth-child(10).active ~ .indicator
 {
     background: #0fbcf9;
     box-shadow: 0 15px 25px #0fbcf999;
-    transform: translateX(calc(70px * 3));
+    transform: translateX(calc(70px * 9));
 }
 
 .txt {
@@ -166,4 +167,8 @@ header {
     mix-blend-mode: multiply;
     text-align: center;
     font-size: 2em;
+}
+
+@media screen {
+    
 }
