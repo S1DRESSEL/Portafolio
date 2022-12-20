@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'open sans';
+    font-family: 'Ubuntu', sans-serif;
     background: rgba(0, 0, 0, 0.984);
 }
 
@@ -24,14 +24,27 @@ header {
     position: sticky;
     top: 0;
     text-align: right;
-    padding: 40px 40px;
+    padding: 20px 40px;
 }
+
+#navbar a {
+    display: flex;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    text-decoration-color: transparent;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .menu {
     display: flex;
     background: #000;
-    opacity: 0.7;
     padding: 10px;
     justify-content: space-evenly;
+    border-radius: 10px;
 }
 
 .menu img{
@@ -41,21 +54,90 @@ header {
 
 .menu ul {
     display: flex;
-    justify-content: space-around;
-    padding: 20px 20px;
+    justify-content: flex-end;
     width: 70%;
+    list-style: none; 
+    align-items: center;
+}
+
+.menu ul li {
+    z-index: 1;
+}
+
+.menu li {
+    width: 70px;
+    height: 70px;
+}
+
+.menu li a {
+    width: 70px;
+    height: 70px;
 }
 
 .menu a:hover {
     text-decoration: underline;
 }
-#navbar a {
-    color: #fff;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
-    text-decoration-color: transparent;
-    font-size: 1.2em;
+
+.menu ul li a .icon {
+    top: 12px;
+    position: relative;
+    line-height: 75px;
+    transition: 0.5s;
+    font-size: 50px;
+}
+
+.menu ul li.active a .icon {
+    top: 7px;
+    font-size: 30px;
+    transform: translateY(-6px);
+}
+
+.menu ul li a .texto {
+    zoom: 0.8;
+    position: absolute;
+    bottom: 60px;
+    transition: 0.25s;
+    text-transform: uppercase;
+    transform: scale(0);
+}
+
+.menu ul li.active a .texto {
+    zoom: 0.7;
+    transform: scale(1);
+}
+
+.indicator {
+    position: absolute;
+    left: 995px;
+    width: 70px;
+    height: 70px;
+    background: rgb(230, 4, 4);
+    border-radius: 10px;
+}
+
+.menu ul li:nth-child(1).active ~ .indicator
+{
+    background: #f53b57;
+    box-shadow: 0 15px 25px #f53b5799;
+    transform: translateX(calc(70px * 0));
+}
+.menu ul li:nth-child(2).active ~ .indicator
+{
+    background: #5d62fb;
+    box-shadow: 0 15px 25px #5d62fb99;
+    transform: translateX(calc(70px * 1));
+}
+.menu ul li:nth-child(3).active ~ .indicator
+{
+    background: #05c46b;
+    box-shadow: 0 15px 25px #05c46b99;
+    transform: translateX(calc(70px * 2));
+}
+.menu ul li:nth-child(4).active ~ .indicator
+{
+    background: #0fbcf9;
+    box-shadow: 0 15px 25px #0fbcf999;
+    transform: translateX(calc(70px * 3));
 }
 
 .txt {
@@ -69,7 +151,6 @@ header {
     border-radius: 30px;
     padding: 4px;
     margin: 0px 40px 0 40px;
-    backdrop-filter: blur(4px);
 }
 
 .txt h1{

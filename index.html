@@ -17,10 +17,39 @@
             <div class="menu">
                     <img src="src/logos.png" class="logo" height="60">
                     <ul>
-                        <li><a href="#">Introduccion</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Projectos</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li class="list active">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="home-outline" style="position: relative; bottom: 5px;"></ion-icon>
+                                </span>
+                                <span class="texto" >Inicio</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="person-circle-outline" style="position: relative; bottom: 5px;"></ion-icon>
+                                </span>
+                                <span class="texto">News</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="help-circle-outline" style="position: relative; bottom: 5px;"></ion-icon>
+                                </span>
+                                <span class="texto">Projects</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="icon">
+                                    <ion-icon name="settings-outline" style="position: relative; bottom: 5px;"></ion-icon>
+                                </span>
+                                <span class="texto" >Contact</span>
+                            </a>
+                        </li>
+                        <div class="indicator"></div>
                     </ul>
             </div>
         </nav>
@@ -31,7 +60,19 @@
     </header>
 
     <!-- Seccion principal -->
+    <script>
+        let list = document.querySelectorAll('.list');
+        function setActiveClass(){
+            list.forEach((item) => 
+            item.classList.remove('active'));
+            this.classList.add('active');
+        }
+        list.forEach((item) => 
+        item.addEventListener('mouseover' , setActiveClass))
+    </script>
 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
 <!DOCTYPE html>
