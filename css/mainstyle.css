@@ -7,6 +7,8 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     background: rgba(0, 0, 0, 0.984);
+    z-index: 1;
+    overflow: hidden;
 }
 
 /* Header encabezado */
@@ -21,10 +23,10 @@ header {
 }
 
 #navbar {
-    position: sticky;
     top: 0;
     text-align: right;
     padding: 20px 40px;
+    position: sticky;
 }
 
 #navbar a {
@@ -169,6 +171,164 @@ header {
     font-size: 2em;
 }
 
-@media screen {
-    
+footer {
+    width: 100%;
+    background: #000;
+    margin: auto;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: 20px;
+    color: #fff;
+}
+
+.titulo-final {
+    color: #fff;
+    overflow: hidden;
+}
+
+@media screen and (max-width:900px){
+    header {
+        background-position: center;
+    }
+
+    .menu img{
+        width: auto;
+    }
+
+    .indicator {
+        position: absolute;
+        left: 454px;
+        border-radius: 10px;
+    }
+
+    .menu ul {
+        padding: 1px;
+        width: 35px;
+    }
+
+    .menu ul li:nth-child(1).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 0));
+    }
+    .menu ul li:nth-child(4).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 1));
+    }
+    .menu ul li:nth-child(7).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 2));
+    }
+    .menu ul li:nth-child(10).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 3));
+    }
+}
+
+@media screen and (max-width:800px){
+    header {
+        background-position: center;
+        width: 100%;
+    }
+
+    #navbar {
+        padding: 20px 20px;
+        width: 94%;
+    }
+
+    .menu img{
+        justify-content: space-around;
+    }
+
+    .menu .logo{
+        display: flex;
+        position: relative;
+        right: 100px;
+    }
+
+    .indicator {
+        position: absolute;
+        left: 415px;
+        border-radius: 10px;
+    }
+
+    .menu ul {
+        width: 35px;
+    }
+
+    .menu ul li:nth-child(1).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 0));
+    }
+    .menu ul li:nth-child(4).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 1));
+    }
+    .menu ul li:nth-child(7).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 2));
+    }
+    .menu ul li:nth-child(10).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 3));
+    }
+
+    .txt{
+        width: 94%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:500px){
+    header {
+        background-position: center;
+    }
+
+    #navbar {
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+    .menu .logo{
+        display: none;
+    }
+
+    .indicator {
+        position: absolute;
+        left: 110px;
+        border-radius: 10px;
+    }
+
+    .menu ul {
+        padding: 1px;
+        width: 35px;
+        height: 70px;
+    }
+
+    .menu ul li:nth-child(1).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 0));
+    }
+    .menu ul li:nth-child(4).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 1));
+    }
+    .menu ul li:nth-child(7).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 2));
+    }
+    .menu ul li:nth-child(10).active ~ .indicator
+    {
+        transform: translateX(calc(70px * 3));
+    }      
+    .txt{
+        width: 480px;
+        margin: 0;
+        align-content: center;
+        left: 5px;
+        position: fixed;
+    } 
 }
