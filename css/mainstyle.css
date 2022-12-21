@@ -257,10 +257,9 @@ footer {
     }
     
     .txt{
-        width: 480px;
-        margin: 0;
+        width: auto;
+        margin: 20px;
         align-content: center;
-        left: 5px;
         position: fixed;
     } 
 }
