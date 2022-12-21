@@ -152,7 +152,7 @@ header {
 .txt {
     background: #fff;
     display: flex;
-    height: 200px;
+    height: 300px;
     position: relative;
     flex-direction: column;
     opacity: 0.4;
@@ -209,6 +209,9 @@ footer {
         padding: 1px;
         width: 35px;
     }
+    .txt{
+        margin: 20px;
+    }
 
 }
 
@@ -233,7 +236,7 @@ footer {
     }
 
     .txt{
-        margin: 0;
+        margin: 20px;
     }
 }
 
@@ -257,9 +260,22 @@ footer {
     }
     
     .txt{
-        width: auto;
+        padding: 20px;
         margin: 20px;
-        align-content: center;
-        position: fixed;
+    } 
+}
+
+@media screen and (max-width:400px) and (min-width:100px) {
+    header {
+        background-position: center;
+    }
+
+    #navbar {
+        display: none;
+    }
+    
+    .txt{
+        padding: 10px;
+        margin: 10px;
     } 
 }
