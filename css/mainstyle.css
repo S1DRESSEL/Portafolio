@@ -16,7 +16,7 @@ body {
 header {
     width: 100%;
     height: 600px;
-    background: url(../src/img01.jpg) no-repeat center;
+    background: #000 url(../src/img01.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -49,14 +49,19 @@ header {
     border-radius: 10px;
 }
 
-.menu img{
-    width: 20%;
-    padding: 0 40px;
+
+.menu .logo {
+    display: flex;
+    width: 30%;
+    padding: 0 20px;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
 }
 
 .menu ul {
     display: flex;
-    justify-content: center;/*flex-end*/
+    justify-content: space-evenly;/*flex-end*/
     width: 70%;
     list-style: none; 
     align-items: center;
@@ -109,38 +114,39 @@ header {
     transform: scale(1);
 }
 
-.indicator {
-    position: absolute;
-    left: 482px;
-    width: 70px;
-    height: 70px;
-    background: rgb(230, 4, 4);
-    border-radius: 50px;
-}
-
-.menu ul li:nth-child(1).active ~ .indicator
+.menu ul li:nth-child(1).active 
 {
     background: #f53b57;
     box-shadow: 0 15px 25px #f53b5799;
-    transform: translateX(calc(70px * 0));
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
 }
-.menu ul li:nth-child(4).active ~ .indicator
+
+.menu ul li:nth-child(2).active1 
 {
+    width: 70px;
+    height: 70px;
     background: #5d62fb;
     box-shadow: 0 15px 25px #5d62fb99;
-    transform: translateX(calc(70px * 3));
+    border-radius: 50px;
 }
-.menu ul li:nth-child(7).active ~ .indicator
+
+.menu ul li:nth-child(3).active2 
 {
+    width: 70px;
+    height: 70px;
     background: #05c46b;
     box-shadow: 0 15px 25px #05c46b99;
-    transform: translateX(calc(70px * 6));
+    border-radius: 50px;
 }
-.menu ul li:nth-child(10).active ~ .indicator
+.menu ul li:nth-child(4).active3 
 {
+    width: 70px;
+    height: 70px;
     background: #0fbcf9;
     box-shadow: 0 15px 25px #0fbcf999;
-    transform: translateX(calc(70px * 9));
+    border-radius: 50px;
 }
 
 .txt {
@@ -195,14 +201,8 @@ footer {
         background-position: center;
     }
 
-    .menu img{
-        width: auto;
-    }
-
-    .indicator {
-        position: absolute;
-        left: 454px;
-        border-radius: 10px;
+    .menu .logo{
+        align-items: center;
     }
 
     .menu ul {
@@ -210,74 +210,29 @@ footer {
         width: 35px;
     }
 
-    .menu ul li:nth-child(1).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 0));
-    }
-    .menu ul li:nth-child(4).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 1));
-    }
-    .menu ul li:nth-child(7).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 2));
-    }
-    .menu ul li:nth-child(10).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 3));
-    }
 }
 
 @media screen and (max-width:800px){
     header {
         background-position: center;
-        width: 100%;
     }
 
     #navbar {
         padding: 20px 20px;
-        width: 94%;
-    }
-
-    .menu img{
-        justify-content: space-around;
     }
 
     .menu .logo{
+        justify-content: space-around;
         display: flex;
         position: relative;
-        right: 100px;
-    }
-
-    .indicator {
-        position: absolute;
-        left: 415px;
-        border-radius: 10px;
+        align-items: center;
     }
 
     .menu ul {
-        width: 35px;
-    }
-
-    .menu ul li:nth-child(1).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 0));
-    }
-    .menu ul li:nth-child(4).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 1));
-    }
-    .menu ul li:nth-child(7).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 2));
-    }
-    .menu ul li:nth-child(10).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 3));
+        width: 60%;
     }
 
     .txt{
-        width: 94%;
         margin: 0;
     }
 }
@@ -296,34 +251,11 @@ footer {
         display: none;
     }
 
-    .indicator {
-        position: absolute;
-        left: 110px;
-        border-radius: 10px;
-    }
-
     .menu ul {
         padding: 1px;
-        width: 35px;
         height: 70px;
     }
-
-    .menu ul li:nth-child(1).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 0));
-    }
-    .menu ul li:nth-child(4).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 1));
-    }
-    .menu ul li:nth-child(7).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 2));
-    }
-    .menu ul li:nth-child(10).active ~ .indicator
-    {
-        transform: translateX(calc(70px * 3));
-    }      
+    
     .txt{
         width: 480px;
         margin: 0;
