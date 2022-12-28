@@ -183,14 +183,6 @@ footer {
     margin: auto;
 }
 
-.contenedor-footer {
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: 20px;
-    color: #fff;
-}
-
 .titulo-final {
     color: #fff;
     overflow: hidden;
