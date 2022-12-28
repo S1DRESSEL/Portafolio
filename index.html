@@ -61,6 +61,11 @@
         </div>
     </header>
 
+    <!-- Second navigation -->
+    <div class="navigation">
+        <div class="menutoggle"></div>
+    </div>
+
     <!-- Seccion principal -->
     <main>
         <section>
@@ -84,6 +89,15 @@
         }
         list.forEach((item) => 
         item.addEventListener('mouseover' , setActiveClass))
+    </script>
+
+    <!-- Scripts efecto neon y shadow en el menu -->
+    <script>
+        const menutoggle = document.querySelector('.menutoggle');
+        const navigation = document.querySelector('.navigation');
+        menutoggle.onclick = function(){
+            navigation.classList.toggle('open')
+        }
     </script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
