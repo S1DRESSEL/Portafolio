@@ -16,10 +16,10 @@
 
 .graphic-go {
     position: absolute;
-    width: 27%;
+    width: 10%;
     mix-blend-mode: screen;
-    top: 34%;
-    right: 0%;
+    top: 24%;
+    right: 10%;
     transform: rotate(10deg);
 }
 
