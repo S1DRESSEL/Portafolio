@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +8,23 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     background: rgba(0, 0, 0, 0.984);
+    /* font-family: Manrope, sans-serif;
+    line-height: 1.6; */
     z-index: 1;
     overflow: hidden;
 }
+
+/*
+.s-center {
+    text-align: center;
+} 
+
+@media screen and (min-width: 1024px) {
+    .s-center {
+    text-align: left;
+} esto debia estar en el estile del proyecto del contador pero como son varios xd...
+}
+*/
 
 /* Header encabezado */
 
@@ -330,6 +345,13 @@ header {
 .navigation ul li.active a .text {
     color: var(--clr);
 }
+
+/* coutdown style flex */
+
+.flex {
+    display: flex;
+}
+
 /* Footer */
 
 footer {
