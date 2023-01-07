@@ -132,19 +132,19 @@
                         <p>Empieza en:</p>
                         <div class="flex">
                             <p class="countdown-item flex">
-                                <span class="countdown-number">03</span>
+                                <span class="countdown-number" id="dias">03</span>
                                 <span class="countdown-letter">D</span>
                             </p>
                             <p class="countdown-item flex">
-                                <span class="countdown-number">11</span>
+                                <span class="countdown-number" id="horas">11</span>
                                 <span class="countdown-letter">H</span>
                             </p>
                             <p class="countdown-item flex">
-                                <span class="countdown-number">48</span>
+                                <span class="countdown-number" id="minutos">48</span>
                                 <span class="countdown-letter">M</span>
                             </p>
                             <p class="countdown-item flex">
-                                <span class="countdown-number">19</span>
+                                <span class="countdown-number" id="segundos">19</span>
                                 <span class="countdown-letter">S</span>
                             </p>
                         </div>
@@ -213,6 +213,9 @@
             navigation.classList.toggle('open')
         }
     </script>
+
+    <!-- Scripts contador de prototipo o cuenta regresiva -->
+    <script src="./js/coutdown.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
