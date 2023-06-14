@@ -30,8 +30,8 @@ header {
     width: 100%;
     height: 600px;
     background: #3d4152;
-    background: -webkit-linear-gradient(to right, hsla(241, 95%, 50%, 0.459), hsla(133, 45%, 52%, 0.664)), url(../src/img01.jpg) no-repeat center;
-    background: linear-gradient(to right, hsla(56, 95%, 50%, 0.459), hsla(184, 45%, 52%, 0.664)), url(../src/img01.jpg);
+    background: -webkit-linear-gradient(to right, hsla(241, 95%, 50%, 0.459), hsla(133, 45%, 52%, 0.664)), url(https://cdn.discordapp.com/attachments/956268298587222048/1118629422392684585/FB_IMG_1686768491006.jpg) no-repeat center;
+    background: linear-gradient(to right, hsla(56, 95%, 50%, 0.459), hsla(184, 45%, 52%, 0.664)), url(https://cdn.discordapp.com/attachments/956268298587222048/1118629422392684585/FB_IMG_1686768491006.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
